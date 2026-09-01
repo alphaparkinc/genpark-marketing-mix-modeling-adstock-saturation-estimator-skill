@@ -1,0 +1,38 @@
+{
+  "name": "genpark-marketing-mix-modeling-adstock-saturation-estimator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Marketing Mix Modeling (MMM) adstock decay and Hill saturation curve estimator optimizing macro media budget allocations.",
+  "author": "genpark",
+  "category": "marketing-econometrics",
+  "tags": [
+    "marketing-mix-modeling",
+    "mmm",
+    "adstock-decay",
+    "hill-saturation",
+    "budget-reallocation"
+  ],
+  "inputs": {
+    "weekly_spends_by_channel": {
+      "type": "object"
+    },
+    "decay_half_life_weeks": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "mmm_model_id": {
+      "type": "string"
+    },
+    "channels_evaluated_count": {
+      "type": "integer"
+    },
+    "diminishing_return_saturation_point_usd": {
+      "type": "number"
+    },
+    "optimal_reallocated_budget_manifest_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
